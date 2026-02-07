@@ -1,0 +1,206 @@
+{
+  "n_seeds": 5,
+  "n_configurations": 14,
+  "total_runs": 70,
+  "overall": {
+    "mean_iae": 0.037974036078921185,
+    "median_iae": 0.02671063481415569,
+    "std_iae": 0.029798021017743308,
+    "iae_95ci": [
+      0.03159855831204004,
+      0.04539703062562651
+    ],
+    "pct95_iae": 0.10491457415627753,
+    "mean_curve_fidelity": 0.9620259639210786,
+    "median_curve_fidelity": 0.9732893651858443,
+    "curve_fidelity_95ci": [
+      0.9548254906442695,
+      0.9685057885526602
+    ],
+    "pct_within_kmgpt_ci": 94.28571428571428
+  },
+  "per_config": {
+    "basic_single_arm": {
+      "n_runs": 5,
+      "mean_iae": 0.022935117439485987,
+      "median_iae": 0.022342971274015275,
+      "std_iae": 0.004674199354737922,
+      "iae_95ci": [
+        0.019415646072334758,
+        0.027599255361900693
+      ],
+      "mean_curve_fidelity": 0.9770648825605142,
+      "mean_event_error": 7.0,
+      "mean_censor_rate_error": 0.07
+    },
+    "low_resolution": {
+      "n_runs": 5,
+      "mean_iae": 0.1262293025283337,
+      "median_iae": 0.1344273247426991,
+      "std_iae": 0.024554414310947,
+      "iae_95ci": [
+        0.10170588617488222,
+        0.14441172294308866
+      ],
+      "mean_curve_fidelity": 0.8737706974716662,
+      "mean_event_error": 31.4,
+      "mean_censor_rate_error": 0.314
+    },
+    "high_resolution": {
+      "n_runs": 5,
+      "mean_iae": 0.022641090501051984,
+      "median_iae": 0.021453336061290833,
+      "std_iae": 0.0035607422863427104,
+      "iae_95ci": [
+        0.020127563924669918,
+        0.02621450107577526
+      ],
+      "mean_curve_fidelity": 0.9773589094989481,
+      "mean_event_error": 7.0,
+      "mean_censor_rate_error": 0.07
+    },
+    "overlapping_curves": {
+      "n_runs": 5,
+      "mean_iae": 0.04101577527775526,
+      "median_iae": 0.037861119859846366,
+      "std_iae": 0.013822332756717173,
+      "iae_95ci": [
+        0.03061197586161265,
+        0.05457036735212083
+      ],
+      "mean_curve_fidelity": 0.9589842247222448,
+      "mean_event_error": 6.2666666666666675,
+      "mean_censor_rate_error": 0.04177777777777778
+    },
+    "truncated_y_axis": {
+      "n_runs": 5,
+      "mean_iae": 0.022632433669963672,
+      "median_iae": 0.021211148009077287,
+      "std_iae": 0.004543631057284245,
+      "iae_95ci": [
+        0.01967715859028869,
+        0.027148855331968102
+      ],
+      "mean_curve_fidelity": 0.9773675663300363,
+      "mean_event_error": 8.0,
+      "mean_censor_rate_error": 0.08000000000000002
+    },
+    "heavy_censoring": {
+      "n_runs": 5,
+      "mean_iae": 0.062040986389047384,
+      "median_iae": 0.060431073425339,
+      "std_iae": 0.013045497231635641,
+      "iae_95ci": [
+        0.05040913092812963,
+        0.07458179681400234
+      ],
+      "mean_curve_fidelity": 0.9379590136109526,
+      "mean_event_error": 0.6,
+      "mean_censor_rate_error": 0.006000000000000005
+    },
+    "light_censoring": {
+      "n_runs": 5,
+      "mean_iae": 0.016435994776294018,
+      "median_iae": 0.015070035266376701,
+      "std_iae": 0.002684850903334479,
+      "iae_95ci": [
+        0.014205844693562264,
+        0.018962368107229587
+      ],
+      "mean_curve_fidelity": 0.983564005223706,
+      "mean_event_error": 13.8,
+      "mean_censor_rate_error": 0.13799999999999998
+    },
+    "small_sample": {
+      "n_runs": 5,
+      "mean_iae": 0.043058304513046444,
+      "median_iae": 0.04813322595908356,
+      "std_iae": 0.007374568977738461,
+      "iae_95ci": [
+        0.03618660322471723,
+        0.049089027938171936
+      ],
+      "mean_curve_fidelity": 0.9569416954869535,
+      "mean_event_error": 2.8,
+      "mean_censor_rate_error": 0.09333333333333335
+    },
+    "large_sample": {
+      "n_runs": 5,
+      "mean_iae": 0.015056923441745427,
+      "median_iae": 0.015035438155061713,
+      "std_iae": 0.0019027656250064798,
+      "iae_95ci": [
+        0.013486649767976578,
+        0.016765092227701846
+      ],
+      "mean_curve_fidelity": 0.9849430765582546,
+      "mean_event_error": 44.2,
+      "mean_censor_rate_error": 0.08840000000000002
+    },
+    "short_followup": {
+      "n_runs": 5,
+      "mean_iae": 0.04477301360291487,
+      "median_iae": 0.03983747876006465,
+      "std_iae": 0.011567947055321303,
+      "iae_95ci": [
+        0.0368582342819227,
+        0.055981144401410846
+      ],
+      "mean_curve_fidelity": 0.9552269863970853,
+      "mean_event_error": 4.8,
+      "mean_censor_rate_error": 0.04799999999999997
+    },
+    "long_followup": {
+      "n_runs": 5,
+      "mean_iae": 0.021611353689267747,
+      "median_iae": 0.01994068534502497,
+      "std_iae": 0.004154039129963323,
+      "iae_95ci": [
+        0.018052333092294516,
+        0.02517037428624098
+      ],
+      "mean_curve_fidelity": 0.9783886463107322,
+      "mean_event_error": 9.8,
+      "mean_censor_rate_error": 0.098
+    },
+    "noisy_image": {
+      "n_runs": 5,
+      "mean_iae": 0.022935117439485987,
+      "median_iae": 0.022342971274015275,
+      "std_iae": 0.004674199354737922,
+      "iae_95ci": [
+        0.019386452564716494,
+        0.027599255361900693
+      ],
+      "mean_curve_fidelity": 0.9770648825605142,
+      "mean_event_error": 7.0,
+      "mean_censor_rate_error": 0.07
+    },
+    "two_arm_trial": {
+      "n_runs": 5,
+      "mean_iae": 0.04825032325508666,
+      "median_iae": 0.04520110133700635,
+      "std_iae": 0.012957377076850175,
+      "iae_95ci": [
+        0.03759627884316657,
+        0.06005082702788631
+      ],
+      "mean_curve_fidelity": 0.9517496767449135,
+      "mean_event_error": 8.3,
+      "mean_censor_rate_error": 0.06916666666666665
+    },
+    "no_risk_table": {
+      "n_runs": 5,
+      "mean_iae": 0.02202076858141749,
+      "median_iae": 0.020888686530487706,
+      "std_iae": 0.004034825348518608,
+      "iae_95ci": [
+        0.018931485094973895,
+        0.025988641263454005
+      ],
+      "mean_curve_fidelity": 0.9779792314185825,
+      "mean_event_error": 7.4,
+      "mean_censor_rate_error": 0.07400000000000001
+    }
+  }
+}

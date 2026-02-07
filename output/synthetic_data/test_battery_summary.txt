@@ -1,0 +1,132 @@
+================================================================================
+SYNTHETIC TEST BATTERY SUMMARY
+================================================================================
+
+Test: basic_single_arm
+  Resolution: 800x600 @ 100 DPI
+  Groups: 1
+  Patients per group: 100
+  Median survival: 24.0 months
+  Censoring rate: 30.0%
+  Follow-up: 60.0 months
+  Group 1: 70 events, 30 censored
+
+Test: low_resolution
+  Resolution: 400x300 @ 50 DPI
+  Groups: 1
+  Patients per group: 100
+  Median survival: 24.0 months
+  Censoring rate: 30.0%
+  Follow-up: 60.0 months
+  Group 1: 70 events, 30 censored
+
+Test: high_resolution
+  Resolution: 1600x1200 @ 150 DPI
+  Groups: 1
+  Patients per group: 100
+  Median survival: 24.0 months
+  Censoring rate: 30.0%
+  Follow-up: 60.0 months
+  Group 1: 70 events, 30 censored
+
+Test: overlapping_curves
+  Resolution: 800x600 @ 100 DPI
+  Groups: 3
+  Patients per group: 150
+  Median survival: 24.0 months
+  Censoring rate: 25.0%
+  Follow-up: 60.0 months
+  Group 1: 113 events, 37 censored
+  Group 2: 113 events, 37 censored
+  Group 3: 113 events, 37 censored
+
+Test: truncated_y_axis
+  Resolution: 800x600 @ 100 DPI
+  Groups: 1
+  Patients per group: 100
+  Median survival: 24.0 months
+  Censoring rate: 30.0%
+  Follow-up: 60.0 months
+  Group 1: 70 events, 30 censored
+
+Test: heavy_censoring
+  Resolution: 800x600 @ 100 DPI
+  Groups: 1
+  Patients per group: 100
+  Median survival: 24.0 months
+  Censoring rate: 70.0%
+  Follow-up: 60.0 months
+  Group 1: 30 events, 70 censored
+
+Test: light_censoring
+  Resolution: 800x600 @ 100 DPI
+  Groups: 1
+  Patients per group: 100
+  Median survival: 24.0 months
+  Censoring rate: 5.0%
+  Follow-up: 60.0 months
+  Group 1: 95 events, 5 censored
+
+Test: small_sample
+  Resolution: 800x600 @ 100 DPI
+  Groups: 1
+  Patients per group: 30
+  Median survival: 24.0 months
+  Censoring rate: 30.0%
+  Follow-up: 60.0 months
+  Group 1: 21 events, 9 censored
+
+Test: large_sample
+  Resolution: 800x600 @ 100 DPI
+  Groups: 1
+  Patients per group: 500
+  Median survival: 24.0 months
+  Censoring rate: 30.0%
+  Follow-up: 60.0 months
+  Group 1: 350 events, 150 censored
+
+Test: short_followup
+  Resolution: 800x600 @ 100 DPI
+  Groups: 1
+  Patients per group: 100
+  Median survival: 6.0 months
+  Censoring rate: 30.0%
+  Follow-up: 12.0 months
+  Group 1: 70 events, 30 censored
+
+Test: long_followup
+  Resolution: 800x600 @ 100 DPI
+  Groups: 1
+  Patients per group: 100
+  Median survival: 48.0 months
+  Censoring rate: 30.0%
+  Follow-up: 120.0 months
+  Group 1: 70 events, 30 censored
+
+Test: noisy_image
+  Resolution: 800x600 @ 100 DPI
+  Groups: 1
+  Patients per group: 100
+  Median survival: 24.0 months
+  Censoring rate: 30.0%
+  Follow-up: 60.0 months
+  Group 1: 70 events, 30 censored
+
+Test: two_arm_trial
+  Resolution: 800x600 @ 100 DPI
+  Groups: 2
+  Patients per group: 120
+  Median survival: 20.0 months
+  Censoring rate: 30.0%
+  Follow-up: 60.0 months
+  Group 1: 84 events, 36 censored
+  Group 2: 84 events, 36 censored
+
+Test: no_risk_table
+  Resolution: 800x600 @ 100 DPI
+  Groups: 1
+  Patients per group: 100
+  Median survival: 24.0 months
+  Censoring rate: 30.0%
+  Follow-up: 60.0 months
+  Group 1: 70 events, 30 censored

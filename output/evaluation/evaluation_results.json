@@ -1,0 +1,669 @@
+[
+  {
+    "test_name": "basic_single_arm",
+    "success": true,
+    "config": {
+      "n_patients": 100,
+      "n_groups": 1,
+      "median_survival": 24.0,
+      "censoring_rate": 0.3,
+      "resolution": [
+        800,
+        600
+      ],
+      "truncate_y_axis": false
+    },
+    "aggregate_metrics": {
+      "success": true,
+      "mean_iae": 0.023171254145855583,
+      "median_iae": 0.023171254145855583,
+      "mean_rmse": 0.03033614019326161,
+      "mean_median_ae": 0.41517067559525955,
+      "mean_n_patients_error": 0.0,
+      "mean_n_events_error": 9.0,
+      "mean_censoring_rate_error": 0.09000000000000002
+    },
+    "group_metrics": {
+      "Group_1": {
+        "success": true,
+        "iae": 0.023171254145855583,
+        "rmse": 0.03033614019326161,
+        "median_survival_gt": 28.870411274007843,
+        "median_survival_recon": 28.455240598412583,
+        "median_ae": 0.41517067559525955,
+        "n_patients_gt": 100,
+        "n_patients_recon": 100,
+        "n_patients_error": 0,
+        "n_events_gt": 70,
+        "n_events_recon": 61,
+        "n_events_error": 9,
+        "censoring_rate_gt": 0.3,
+        "censoring_rate_recon": 0.39,
+        "censoring_rate_error": 0.09000000000000002
+      }
+    }
+  },
+  {
+    "test_name": "low_resolution",
+    "success": true,
+    "config": {
+      "n_patients": 100,
+      "n_groups": 1,
+      "median_survival": 24.0,
+      "censoring_rate": 0.3,
+      "resolution": [
+        400,
+        300
+      ],
+      "truncate_y_axis": false
+    },
+    "aggregate_metrics": {
+      "success": true,
+      "mean_iae": 0.071663153378277,
+      "median_iae": 0.071663153378277,
+      "mean_rmse": 0.10924119152820783,
+      "mean_median_ae": 2.4428951132320336,
+      "mean_n_patients_error": 0.0,
+      "mean_n_events_error": 27.0,
+      "mean_censoring_rate_error": 0.26999999999999996
+    },
+    "group_metrics": {
+      "Group_1": {
+        "success": true,
+        "iae": 0.071663153378277,
+        "rmse": 0.10924119152820783,
+        "median_survival_gt": 28.870411274007843,
+        "median_survival_recon": 31.313306387239876,
+        "median_ae": 2.4428951132320336,
+        "n_patients_gt": 100,
+        "n_patients_recon": 100,
+        "n_patients_error": 0,
+        "n_events_gt": 70,
+        "n_events_recon": 43,
+        "n_events_error": 27,
+        "censoring_rate_gt": 0.3,
+        "censoring_rate_recon": 0.57,
+        "censoring_rate_error": 0.26999999999999996
+      }
+    }
+  },
+  {
+    "test_name": "high_resolution",
+    "success": true,
+    "config": {
+      "n_patients": 100,
+      "n_groups": 1,
+      "median_survival": 24.0,
+      "censoring_rate": 0.3,
+      "resolution": [
+        1600,
+        1200
+      ],
+      "truncate_y_axis": false
+    },
+    "aggregate_metrics": {
+      "success": true,
+      "mean_iae": 0.0208335760636879,
+      "median_iae": 0.0208335760636879,
+      "mean_rmse": 0.028119524075549886,
+      "mean_median_ae": 0.522537454074552,
+      "mean_n_patients_error": 0.0,
+      "mean_n_events_error": 9.0,
+      "mean_censoring_rate_error": 0.09000000000000002
+    },
+    "group_metrics": {
+      "Group_1": {
+        "success": true,
+        "iae": 0.0208335760636879,
+        "rmse": 0.028119524075549886,
+        "median_survival_gt": 28.870411274007843,
+        "median_survival_recon": 28.34787381993329,
+        "median_ae": 0.522537454074552,
+        "n_patients_gt": 100,
+        "n_patients_recon": 100,
+        "n_patients_error": 0,
+        "n_events_gt": 70,
+        "n_events_recon": 61,
+        "n_events_error": 9,
+        "censoring_rate_gt": 0.3,
+        "censoring_rate_recon": 0.39,
+        "censoring_rate_error": 0.09000000000000002
+      }
+    }
+  },
+  {
+    "test_name": "overlapping_curves",
+    "success": true,
+    "config": {
+      "n_patients": 150,
+      "n_groups": 3,
+      "median_survival": 24.0,
+      "censoring_rate": 0.25,
+      "resolution": [
+        800,
+        600
+      ],
+      "truncate_y_axis": false
+    },
+    "aggregate_metrics": {
+      "success": true,
+      "mean_iae": 0.03352231951440205,
+      "median_iae": 0.02599123794140026,
+      "mean_rmse": 0.040594461283032394,
+      "mean_median_ae": 1.9303762131863504,
+      "mean_n_patients_error": 0.0,
+      "mean_n_events_error": 9.333333333333334,
+      "mean_censoring_rate_error": 0.06222222222222221
+    },
+    "group_metrics": {
+      "Group_1": {
+        "success": true,
+        "iae": 0.02599123794140026,
+        "rmse": 0.03721261889637975,
+        "median_survival_gt": 24.456848627036166,
+        "median_survival_recon": 26.200203080467492,
+        "median_ae": 1.7433544534313263,
+        "n_patients_gt": 150,
+        "n_patients_recon": 150,
+        "n_patients_error": 0,
+        "n_events_gt": 113,
+        "n_events_recon": 95,
+        "n_events_error": 18,
+        "censoring_rate_gt": 0.24666666666666667,
+        "censoring_rate_recon": 0.36666666666666664,
+        "censoring_rate_error": 0.11999999999999997
+      },
+      "Group_2": {
+        "success": true,
+        "iae": 0.05345702684903878,
+        "rmse": 0.06001942694829398,
+        "median_survival_gt": 25.335940231101038,
+        "median_survival_recon": 21.462045719682536,
+        "median_ae": 3.873894511418502,
+        "n_patients_gt": 150,
+        "n_patients_recon": 150,
+        "n_patients_error": 0,
+        "n_events_gt": 113,
+        "n_events_recon": 119,
+        "n_events_error": 6,
+        "censoring_rate_gt": 0.24666666666666667,
+        "censoring_rate_recon": 0.20666666666666667,
+        "censoring_rate_error": 0.04000000000000001
+      },
+      "Group_3": {
+        "success": true,
+        "iae": 0.021118693752767113,
+        "rmse": 0.02455133800442344,
+        "median_survival_gt": 19.581868514358348,
+        "median_survival_recon": 19.75574818906757,
+        "median_ae": 0.17387967470922305,
+        "n_patients_gt": 150,
+        "n_patients_recon": 150,
+        "n_patients_error": 0,
+        "n_events_gt": 113,
+        "n_events_recon": 109,
+        "n_events_error": 4,
+        "censoring_rate_gt": 0.24666666666666667,
+        "censoring_rate_recon": 0.2733333333333333,
+        "censoring_rate_error": 0.026666666666666644
+      }
+    }
+  },
+  {
+    "test_name": "truncated_y_axis",
+    "success": true,
+    "config": {
+      "n_patients": 100,
+      "n_groups": 1,
+      "median_survival": 24.0,
+      "censoring_rate": 0.3,
+      "resolution": [
+        800,
+        600
+      ],
+      "truncate_y_axis": true
+    },
+    "aggregate_metrics": {
+      "success": true,
+      "mean_iae": 0.023171254145855583,
+      "median_iae": 0.023171254145855583,
+      "mean_rmse": 0.03033614019326161,
+      "mean_median_ae": 0.41517067559525955,
+      "mean_n_patients_error": 0.0,
+      "mean_n_events_error": 9.0,
+      "mean_censoring_rate_error": 0.09000000000000002
+    },
+    "group_metrics": {
+      "Group_1": {
+        "success": true,
+        "iae": 0.023171254145855583,
+        "rmse": 0.03033614019326161,
+        "median_survival_gt": 28.870411274007843,
+        "median_survival_recon": 28.455240598412583,
+        "median_ae": 0.41517067559525955,
+        "n_patients_gt": 100,
+        "n_patients_recon": 100,
+        "n_patients_error": 0,
+        "n_events_gt": 70,
+        "n_events_recon": 61,
+        "n_events_error": 9,
+        "censoring_rate_gt": 0.3,
+        "censoring_rate_recon": 0.39,
+        "censoring_rate_error": 0.09000000000000002
+      }
+    }
+  },
+  {
+    "test_name": "heavy_censoring",
+    "success": true,
+    "config": {
+      "n_patients": 100,
+      "n_groups": 1,
+      "median_survival": 24.0,
+      "censoring_rate": 0.7,
+      "resolution": [
+        800,
+        600
+      ],
+      "truncate_y_axis": false
+    },
+    "aggregate_metrics": {
+      "success": true,
+      "mean_iae": 0.05459485911907359,
+      "median_iae": 0.05459485911907359,
+      "mean_rmse": 0.05936801033136394,
+      "mean_median_ae": 9.032975994486797,
+      "mean_n_patients_error": 0.0,
+      "mean_n_events_error": 0.0,
+      "mean_censoring_rate_error": 0.0
+    },
+    "group_metrics": {
+      "Group_1": {
+        "success": true,
+        "iae": 0.05459485911907359,
+        "rmse": 0.05936801033136394,
+        "median_survival_gt": 51.4451372436895,
+        "median_survival_recon": 42.412161249202704,
+        "median_ae": 9.032975994486797,
+        "n_patients_gt": 100,
+        "n_patients_recon": 100,
+        "n_patients_error": 0,
+        "n_events_gt": 30,
+        "n_events_recon": 30,
+        "n_events_error": 0,
+        "censoring_rate_gt": 0.7,
+        "censoring_rate_recon": 0.7,
+        "censoring_rate_error": 0.0
+      }
+    }
+  },
+  {
+    "test_name": "light_censoring",
+    "success": true,
+    "config": {
+      "n_patients": 100,
+      "n_groups": 1,
+      "median_survival": 24.0,
+      "censoring_rate": 0.05,
+      "resolution": [
+        800,
+        600
+      ],
+      "truncate_y_axis": false
+    },
+    "aggregate_metrics": {
+      "success": true,
+      "mean_iae": 0.02166082648763986,
+      "median_iae": 0.02166082648763986,
+      "mean_rmse": 0.03184737505918318,
+      "mean_median_ae": 1.1645871728214914,
+      "mean_n_patients_error": 0.0,
+      "mean_n_events_error": 17.0,
+      "mean_censoring_rate_error": 0.16999999999999998
+    },
+    "group_metrics": {
+      "Group_1": {
+        "success": true,
+        "iae": 0.02166082648763986,
+        "rmse": 0.03184737505918318,
+        "median_survival_gt": 23.606406879857538,
+        "median_survival_recon": 24.77099405267903,
+        "median_ae": 1.1645871728214914,
+        "n_patients_gt": 100,
+        "n_patients_recon": 100,
+        "n_patients_error": 0,
+        "n_events_gt": 95,
+        "n_events_recon": 78,
+        "n_events_error": 17,
+        "censoring_rate_gt": 0.05,
+        "censoring_rate_recon": 0.22,
+        "censoring_rate_error": 0.16999999999999998
+      }
+    }
+  },
+  {
+    "test_name": "small_sample",
+    "success": true,
+    "config": {
+      "n_patients": 30,
+      "n_groups": 1,
+      "median_survival": 24.0,
+      "censoring_rate": 0.3,
+      "resolution": [
+        800,
+        600
+      ],
+      "truncate_y_axis": false
+    },
+    "aggregate_metrics": {
+      "success": true,
+      "mean_iae": 0.05024230829176662,
+      "median_iae": 0.05024230829176662,
+      "mean_rmse": 0.05092513925633977,
+      "mean_median_ae": 3.022673606806446,
+      "mean_n_patients_error": 0.0,
+      "mean_n_events_error": 2.0,
+      "mean_censoring_rate_error": 0.06666666666666665
+    },
+    "group_metrics": {
+      "Group_1": {
+        "success": true,
+        "iae": 0.05024230829176662,
+        "rmse": 0.05092513925633977,
+        "median_survival_gt": 28.29346538216322,
+        "median_survival_recon": 25.270791775356773,
+        "median_ae": 3.022673606806446,
+        "n_patients_gt": 30,
+        "n_patients_recon": 30,
+        "n_patients_error": 0,
+        "n_events_gt": 21,
+        "n_events_recon": 19,
+        "n_events_error": 2,
+        "censoring_rate_gt": 0.3,
+        "censoring_rate_recon": 0.36666666666666664,
+        "censoring_rate_error": 0.06666666666666665
+      }
+    }
+  },
+  {
+    "test_name": "large_sample",
+    "success": true,
+    "config": {
+      "n_patients": 500,
+      "n_groups": 1,
+      "median_survival": 24.0,
+      "censoring_rate": 0.3,
+      "resolution": [
+        800,
+        600
+      ],
+      "truncate_y_axis": false
+    },
+    "aggregate_metrics": {
+      "success": true,
+      "mean_iae": 0.015516458342587108,
+      "median_iae": 0.015516458342587108,
+      "mean_rmse": 0.02759861437146616,
+      "mean_median_ae": 0.652017292079023,
+      "mean_n_patients_error": 0.0,
+      "mean_n_events_error": 52.0,
+      "mean_censoring_rate_error": 0.10400000000000004
+    },
+    "group_metrics": {
+      "Group_1": {
+        "success": true,
+        "iae": 0.015516458342587108,
+        "rmse": 0.02759861437146616,
+        "median_survival_gt": 29.850408848547804,
+        "median_survival_recon": 29.19839155646878,
+        "median_ae": 0.652017292079023,
+        "n_patients_gt": 500,
+        "n_patients_recon": 500,
+        "n_patients_error": 0,
+        "n_events_gt": 350,
+        "n_events_recon": 298,
+        "n_events_error": 52,
+        "censoring_rate_gt": 0.3,
+        "censoring_rate_recon": 0.404,
+        "censoring_rate_error": 0.10400000000000004
+      }
+    }
+  },
+  {
+    "test_name": "short_followup",
+    "success": true,
+    "config": {
+      "n_patients": 100,
+      "n_groups": 1,
+      "median_survival": 6.0,
+      "censoring_rate": 0.3,
+      "resolution": [
+        800,
+        600
+      ],
+      "truncate_y_axis": false
+    },
+    "aggregate_metrics": {
+      "success": true,
+      "mean_iae": 0.06356652750859323,
+      "median_iae": 0.06356652750859323,
+      "mean_rmse": 0.07410466404252372,
+      "mean_median_ae": 1.086992048662653,
+      "mean_n_patients_error": 0.0,
+      "mean_n_events_error": 3.0,
+      "mean_censoring_rate_error": 0.030000000000000027
+    },
+    "group_metrics": {
+      "Group_1": {
+        "success": true,
+        "iae": 0.06356652750859323,
+        "rmse": 0.07410466404252372,
+        "median_survival_gt": 7.160310071815449,
+        "median_survival_recon": 8.247302120478102,
+        "median_ae": 1.086992048662653,
+        "n_patients_gt": 100,
+        "n_patients_recon": 100,
+        "n_patients_error": 0,
+        "n_events_gt": 70,
+        "n_events_recon": 67,
+        "n_events_error": 3,
+        "censoring_rate_gt": 0.3,
+        "censoring_rate_recon": 0.33,
+        "censoring_rate_error": 0.030000000000000027
+      }
+    }
+  },
+  {
+    "test_name": "long_followup",
+    "success": true,
+    "config": {
+      "n_patients": 100,
+      "n_groups": 1,
+      "median_survival": 48.0,
+      "censoring_rate": 0.3,
+      "resolution": [
+        800,
+        600
+      ],
+      "truncate_y_axis": false
+    },
+    "aggregate_metrics": {
+      "success": true,
+      "mean_iae": 0.016998026510596346,
+      "median_iae": 0.016998026510596346,
+      "mean_rmse": 0.02517207689663382,
+      "mean_median_ae": 1.107955939200906,
+      "mean_n_patients_error": 0.0,
+      "mean_n_events_error": 11.0,
+      "mean_censoring_rate_error": 0.10999999999999999
+    },
+    "group_metrics": {
+      "Group_1": {
+        "success": true,
+        "iae": 0.016998026510596346,
+        "rmse": 0.02517207689663382,
+        "median_survival_gt": 57.740822548015686,
+        "median_survival_recon": 56.63286660881478,
+        "median_ae": 1.107955939200906,
+        "n_patients_gt": 100,
+        "n_patients_recon": 100,
+        "n_patients_error": 0,
+        "n_events_gt": 70,
+        "n_events_recon": 59,
+        "n_events_error": 11,
+        "censoring_rate_gt": 0.3,
+        "censoring_rate_recon": 0.41,
+        "censoring_rate_error": 0.10999999999999999
+      }
+    }
+  },
+  {
+    "test_name": "noisy_image",
+    "success": true,
+    "config": {
+      "n_patients": 100,
+      "n_groups": 1,
+      "median_survival": 24.0,
+      "censoring_rate": 0.3,
+      "resolution": [
+        800,
+        600
+      ],
+      "truncate_y_axis": false
+    },
+    "aggregate_metrics": {
+      "success": true,
+      "mean_iae": 0.023171254145855583,
+      "median_iae": 0.023171254145855583,
+      "mean_rmse": 0.03033614019326161,
+      "mean_median_ae": 0.41517067559525955,
+      "mean_n_patients_error": 0.0,
+      "mean_n_events_error": 9.0,
+      "mean_censoring_rate_error": 0.09000000000000002
+    },
+    "group_metrics": {
+      "Group_1": {
+        "success": true,
+        "iae": 0.023171254145855583,
+        "rmse": 0.03033614019326161,
+        "median_survival_gt": 28.870411274007843,
+        "median_survival_recon": 28.455240598412583,
+        "median_ae": 0.41517067559525955,
+        "n_patients_gt": 100,
+        "n_patients_recon": 100,
+        "n_patients_error": 0,
+        "n_events_gt": 70,
+        "n_events_recon": 61,
+        "n_events_error": 9,
+        "censoring_rate_gt": 0.3,
+        "censoring_rate_recon": 0.39,
+        "censoring_rate_error": 0.09000000000000002
+      }
+    }
+  },
+  {
+    "test_name": "two_arm_trial",
+    "success": true,
+    "config": {
+      "n_patients": 120,
+      "n_groups": 2,
+      "median_survival": 20.0,
+      "censoring_rate": 0.3,
+      "resolution": [
+        800,
+        600
+      ],
+      "truncate_y_axis": false
+    },
+    "aggregate_metrics": {
+      "success": true,
+      "mean_iae": 0.01833515516735164,
+      "median_iae": 0.01833515516735164,
+      "mean_rmse": 0.02461815747761093,
+      "mean_median_ae": 1.6371245030225783,
+      "mean_n_patients_error": 0.0,
+      "mean_n_events_error": 7.0,
+      "mean_censoring_rate_error": 0.05833333333333332
+    },
+    "group_metrics": {
+      "Group_1": {
+        "success": true,
+        "iae": 0.016272225978276746,
+        "rmse": 0.025238826360225616,
+        "median_survival_gt": 23.95115882618921,
+        "median_survival_recon": 25.084399436564812,
+        "median_ae": 1.1332406103756014,
+        "n_patients_gt": 120,
+        "n_patients_recon": 120,
+        "n_patients_error": 0,
+        "n_events_gt": 84,
+        "n_events_recon": 73,
+        "n_events_error": 11,
+        "censoring_rate_gt": 0.3,
+        "censoring_rate_recon": 0.39166666666666666,
+        "censoring_rate_error": 0.09166666666666667
+      },
+      "Group_2": {
+        "success": true,
+        "iae": 0.020398084356426534,
+        "rmse": 0.02399748859499625,
+        "median_survival_gt": 14.86738133225352,
+        "median_survival_recon": 12.726372936583966,
+        "median_ae": 2.141008395669555,
+        "n_patients_gt": 120,
+        "n_patients_recon": 120,
+        "n_patients_error": 0,
+        "n_events_gt": 84,
+        "n_events_recon": 87,
+        "n_events_error": 3,
+        "censoring_rate_gt": 0.3,
+        "censoring_rate_recon": 0.275,
+        "censoring_rate_error": 0.024999999999999967
+      }
+    }
+  },
+  {
+    "test_name": "no_risk_table",
+    "success": true,
+    "config": {
+      "n_patients": 100,
+      "n_groups": 1,
+      "median_survival": 24.0,
+      "censoring_rate": 0.3,
+      "resolution": [
+        800,
+        600
+      ],
+      "truncate_y_axis": false
+    },
+    "aggregate_metrics": {
+      "success": true,
+      "mean_iae": 0.020949232464583932,
+      "median_iae": 0.020949232464583932,
+      "mean_rmse": 0.02891479395866239,
+      "mean_median_ae": 0.3389907396833678,
+      "mean_n_patients_error": 0.0,
+      "mean_n_events_error": 10.0,
+      "mean_censoring_rate_error": 0.10000000000000003
+    },
+    "group_metrics": {
+      "Group_1": {
+        "success": true,
+        "iae": 0.020949232464583932,
+        "rmse": 0.02891479395866239,
+        "median_survival_gt": 28.870411274007843,
+        "median_survival_recon": 29.20940201369121,
+        "median_ae": 0.3389907396833678,
+        "n_patients_gt": 100,
+        "n_patients_recon": 100,
+        "n_patients_error": 0,
+        "n_events_gt": 70,
+        "n_events_recon": 60,
+        "n_events_error": 10,
+        "censoring_rate_gt": 0.3,
+        "censoring_rate_recon": 0.4,
+        "censoring_rate_error": 0.10000000000000003
+      }
+    }
+  }
+]

@@ -1,0 +1,166 @@
+================================================================================
+IPD RECOVERY PIPELINE EVALUATION REPORT
+================================================================================
+
+Total test cases: 14
+Successful: 14 (100.0%)
+Failed: 0
+
+AGGREGATE METRICS (across all successful cases):
+--------------------------------------------------------------------------------
+  IAE (Integrated Absolute Error):
+    Mean: 0.032671
+    Median: 0.023171
+    95th percentile: 0.066400
+
+  RMSE (Root Mean Squared Error):
+    Mean: 0.042251
+    Median: 0.030336
+    95th percentile: 0.086402
+
+  Median Survival Absolute Error:
+    Mean: 1.7275 time units
+    Median: 1.0975 time units
+
+COMPARISON TO KM-GPT BENCHMARKS:
+--------------------------------------------------------------------------------
+  KM-GPT paper reports:
+    Median IAE: 0.018 (95% CI: 0.002-0.088)
+    Median Absolute Error in median OS: 0.005 (95% CI: 0.000-0.088)
+
+  Our pipeline:
+    Median IAE: 0.023171
+    Median Absolute Error in median survival: 0.018291 (normalized)
+
+  [PASS] IAE performance is within KM-GPT's 95% confidence interval
+  [PASS] Median survival error is within KM-GPT's 95% confidence interval
+
+
+INDIVIDUAL TEST CASE RESULTS:
+--------------------------------------------------------------------------------
+
+basic_single_arm:
+  Status: SUCCESS
+  Config: 100 patients, 1 groups, censoring=0.30
+  IAE: 0.023171
+  RMSE: 0.030336
+  Median survival AE: 0.4152
+  Patient count error: 0.0
+  Event count error: 9.0
+
+low_resolution:
+  Status: SUCCESS
+  Config: 100 patients, 1 groups, censoring=0.30
+  IAE: 0.071663
+  RMSE: 0.109241
+  Median survival AE: 2.4429
+  Patient count error: 0.0
+  Event count error: 27.0
+
+high_resolution:
+  Status: SUCCESS
+  Config: 100 patients, 1 groups, censoring=0.30
+  IAE: 0.020834
+  RMSE: 0.028120
+  Median survival AE: 0.5225
+  Patient count error: 0.0
+  Event count error: 9.0
+
+overlapping_curves:
+  Status: SUCCESS
+  Config: 150 patients, 3 groups, censoring=0.25
+  IAE: 0.033522
+  RMSE: 0.040594
+  Median survival AE: 1.9304
+  Patient count error: 0.0
+  Event count error: 9.3
+
+truncated_y_axis:
+  Status: SUCCESS
+  Config: 100 patients, 1 groups, censoring=0.30
+  IAE: 0.023171
+  RMSE: 0.030336
+  Median survival AE: 0.4152
+  Patient count error: 0.0
+  Event count error: 9.0
+
+heavy_censoring:
+  Status: SUCCESS
+  Config: 100 patients, 1 groups, censoring=0.70
+  IAE: 0.054595
+  RMSE: 0.059368
+  Median survival AE: 9.0330
+  Patient count error: 0.0
+  Event count error: 0.0
+
+light_censoring:
+  Status: SUCCESS
+  Config: 100 patients, 1 groups, censoring=0.05
+  IAE: 0.021661
+  RMSE: 0.031847
+  Median survival AE: 1.1646
+  Patient count error: 0.0
+  Event count error: 17.0
+
+small_sample:
+  Status: SUCCESS
+  Config: 30 patients, 1 groups, censoring=0.30
+  IAE: 0.050242
+  RMSE: 0.050925
+  Median survival AE: 3.0227
+  Patient count error: 0.0
+  Event count error: 2.0
+
+large_sample:
+  Status: SUCCESS
+  Config: 500 patients, 1 groups, censoring=0.30
+  IAE: 0.015516
+  RMSE: 0.027599
+  Median survival AE: 0.6520
+  Patient count error: 0.0
+  Event count error: 52.0
+
+short_followup:
+  Status: SUCCESS
+  Config: 100 patients, 1 groups, censoring=0.30
+  IAE: 0.063567
+  RMSE: 0.074105
+  Median survival AE: 1.0870
+  Patient count error: 0.0
+  Event count error: 3.0
+
+long_followup:
+  Status: SUCCESS
+  Config: 100 patients, 1 groups, censoring=0.30
+  IAE: 0.016998
+  RMSE: 0.025172
+  Median survival AE: 1.1080
+  Patient count error: 0.0
+  Event count error: 11.0
+
+noisy_image:
+  Status: SUCCESS
+  Config: 100 patients, 1 groups, censoring=0.30
+  IAE: 0.023171
+  RMSE: 0.030336
+  Median survival AE: 0.4152
+  Patient count error: 0.0
+  Event count error: 9.0
+
+two_arm_trial:
+  Status: SUCCESS
+  Config: 120 patients, 2 groups, censoring=0.30
+  IAE: 0.018335
+  RMSE: 0.024618
+  Median survival AE: 1.6371
+  Patient count error: 0.0
+  Event count error: 7.0
+
+no_risk_table:
+  Status: SUCCESS
+  Config: 100 patients, 1 groups, censoring=0.30
+  IAE: 0.020949
+  RMSE: 0.028915
+  Median survival AE: 0.3390
+  Patient count error: 0.0
+  Event count error: 10.0
